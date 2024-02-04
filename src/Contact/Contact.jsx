@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 
 import { Form } from "react-router-dom";
 
 export default function Contact() {
+    useEffect(()=>{
+        document.title ="Contact"
+    },[])
 
     return <>
         <div className='contact'>

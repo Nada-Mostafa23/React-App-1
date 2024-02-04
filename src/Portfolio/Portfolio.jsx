@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img1 from '../poert1.png'
 import img2 from '../port2.png'
 import img3 from '../port3.png'
 
 export default function Portfolio() {
+    useEffect(()=>{
+        document.title="Portfolio"
+    },[])
     return <>
         <div className="portfolio">
             <div className="container text-center">

@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import logo from '../avataaars.svg'
 
 export default function Home() {
+    useEffect(()=>{
+        document.title="Home"
+    },[])
     return <>
     
         <div className='home'>
