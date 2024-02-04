@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,155 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.logo{
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+.test{
+  background-color: #1ABC9C;
+  color: #fff !important;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-link{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff !important;
+}
+.navbar{
+  background-color: #2C3E50;
+}
+.footer{
+  background-color: #1A252F;
+}
+.aboutUs{
+  background-color: #2C3E50;
+margin-top: -5px;
+  padding:4% 0;
+
+}
+.icons ul li i{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+.about,.home{
+  background-color: #1ABC9C;
+ 
+  padding: 15% 0;
+ 
+  position: relative;
+}
+.about .after{
+  width: 8%;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  left: 40%;
+  bottom: 55%;
+}
+.about .before{
+  width: 8%;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  right: 40%;
+  bottom: 55%;
+}
+.home .after{
+  width: 8%;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  left: 40%;
+  bottom: 34%;
+}
+.home .before{
+  width: 8%;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  right: 40%;
+  bottom: 34%;
+}
+.contact{
+  padding: 15% 0;
+  color: #2C3E50;
+}
+
+.contact .after, .portfolio .after{
+  width: 8%;
+  height: 5px;
+  background-color: #2C3E50;
+  position: absolute;
+  left: 40%;
+  bottom: 57%;
+}
+.contact .before , .portfolio .before{
+  width: 8%;
+  height: 5px;
+  background-color: #2C3E50;
+  position: absolute;
+  right: 40%;
+  bottom: 57%;
+}
+.contact button{
+  background-color: #1ABC9C;
+  margin-right: 36%;
+  border: none;
+  color: #fff;
+  padding: 1%;
+  border-radius: 10px;
+}
+.contact form input{
+  border: none !important;
+  border-bottom: 1px solid #ccc !important;
+}
+.form-control:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+.portfolio{
+  padding: 15% 0;
+  color: #2C3E50;
+}
+.notfound{
+  padding: 10%;
+  background-color: coral;
+  text-align: center;
+}
+.portfolio .item img{
+  border-radius: 10px ;
+}
+.portfolio .item{
+  position: relative;
+}
+.portfolio .layer i{
+  font-size: 4.5rem;
+ color: #fff;
+}
+.portfolio .layer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #1abc9cdc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.portfolio .item:hover .layer{
+opacity: 1;
+
 }
